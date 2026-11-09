@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Web Playground — مساحتي الأولى في عالم الويب">
+  <title>My Web Playground | Rahaf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="My Web Playground home"><span class="brand-mark">&lt;/&gt;</span><span>MY WEB <b>PLAYGROUND</b></span></a>
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="#about">عني</a><a href="#web">الويب</a><a href="#essentials">الأساسيات</a><a href="#compare">Frontend / Backend</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="تغيير المظهر">☼ <span>المظهر</span></button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> WEB DEVELOPMENT · PERSONAL PROJECT</div>
+        <h1>MY WEB<br><span>PLAYGROUND</span></h1>
+        <h2>مساحتي الأولى في عالم الويب<span class="blue-dot">.</span></h2>
+        <p class="hero-lead">هنا أحوّل ما تعلّمته إلى تجربة حقيقية — أجرّب، أكتب كود، وأكتشف كيف تُبنى صفحات الويب.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#about">ابدأ الاستكشاف <span>↙</span></a><a class="text-link" href="#essentials">اكتشف التقنيات <span>→</span></a></div>
+        <div class="hero-meta"><span><i></i> HTML</span><span><i></i> CSS</span><span><i></i> JAVASCRIPT</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>rahaf@my-web-playground: ~</span><b>•••</b></div>
+          <div class="window-content">
+            <div class="mini-profile"><div class="avatar">R</div><div><strong>Hello, I'm Rahaf</strong><small>Computer Science Student</small></div><span class="online">● ONLINE</span></div>
+            <div class="code-lines"><p><em>&lt;html&gt;</em> <span>Building ideas...</span></p><p><em>{ CSS }</em> <span>Making it beautiful...</span></p><p><em>JS( )</em> <span>Adding interaction...</span></p></div>
+            <div class="preview-card"><div class="preview-top"><span>LIVE PREVIEW</span><span>● ● ●</span></div><h3>Ideas become reality.</h3><p>One line of code at a time.</p><button id="heroTry">جرّب التفاعل ↗</button></div>
+          </div>
+        </div>
+        <div class="floating-tag tag-html">&lt;HTML&gt;</div><div class="floating-tag tag-css">{ CSS }</div><div class="floating-tag tag-js">JS( )</div>
+        <div class="hero-index">01 <span>/ 05</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip section-wrap">
+      <span class="strip-label">THE CONCEPT</span><p>YOUR PAGE <b>·</b> YOUR KNOWLEDGE <b>·</b> YOUR CREATIVITY</p>
+      <span class="strip-ar">صفحة واحدة تجمع تعلّمي وإبداعي.</span>
+    </section>
+
+    <section class="content-section section-wrap" id="about">
+      <div class="section-heading"><div><span class="section-kicker">STATION 01</span><h2>ABOUT <span>ME</span></h2></div><span class="section-number">01</span></div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-avatar">R<span>✦</span></div>
+          <div><span class="tiny-label">A LITTLE INTRODUCTION</span><h3>مرحباً، أنا رهف 👋</h3><p>طالبة علوم حاسب، ومهتمة بتطوير الويب وبناء تجارب رقمية تجمع بين الفكرة والتنفيذ. أتعلم خطوة بخطوة، وأطمح إلى تطوير صفحات ويب تفاعلية ومفيدة.</p></div>
+          <div class="about-bottom"><span>COMPUTER SCIENCE</span><span>WEB DEVELOPMENT</span></div>
+        </div>
+        <div class="about-note"><span class="quote-mark">“</span><h3>كل مشروع يبدأ<br>بفضول صغير.</h3><p>هدفي من هذه الصفحة أن أطبّق أساسيات HTML وCSS وJavaScript، وأفهم دور كل تقنية من خلال أمثلة أقدر أشوف نتيجتها بنفسي.</p><div class="signature">RAHAF <span>✳</span></div></div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="web">
+      <div class="section-heading"><div><span class="section-kicker">STATION 02</span><h2>WEB IN <span>MY WORDS</span></h2></div><span class="section-number">02</span></div>
+      <div class="web-explain glass-card">
+        <div class="web-text"><h3>طيب، وش يعني الويب؟</h3><p>الويب هو مجموعة صفحات ومواقع نقدر نوصل لها عن طريق الإنترنت باستخدام المتصفح. لما أفتح موقع، المتصفح يطلب الصفحة من الخادم، والخادم يرسل الملفات عشان يعرضها لي.</p><div class="web-fact"><span>💡</span> ببساطة: أنا أطلب، الخادم يرسل، والمتصفح يعرض.</div></div>
+        <div class="flow-diagram" dir="ltr">
+          <div class="flow-node"><div class="flow-icon">👤</div><strong>USER</strong><small>المستخدم</small><span>يفتح الموقع</span></div><div class="flow-arrow">⇄</div>
+          <div class="flow-node active"><div class="flow-icon">▣</div><strong>BROWSER</strong><small>المتصفح</small><span>يرسل الطلب ويعرض</span></div><div class="flow-arrow">⇄</div>
+          <div class="flow-node"><div class="flow-icon">▤</div><strong>SERVER</strong><small>الخادم</small><span>يرسل ملفات الصفحة</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="essentials">
+      <div class="section-heading"><div><span class="section-kicker">STATIONS 03 — 05</span><h2>THE THREE <span>ESSENTIALS</span></h2></div><span class="section-number">03</span></div>
+      <p class="section-description">كل تقنية لها دور مختلف. جرّب الأمثلة وشاهد كيف يتغيّر شكل الصفحة وسلوكها.</p>
+      <div class="tech-grid">
+        <article class="tech-card glass-card">
+          <div class="tech-head"><span class="tech-icon html-icon">&lt;/&gt;</span><span class="tech-label">STATION 03 · STRUCTURE</span></div>
+          <h3>HTML <span>— الهيكل</span></h3><p>HTML هي لغة ترميز تحدد عناصر الصفحة ومحتواها، مثل العناوين والفقرات والروابط والصور.</p>
+          <div class="code-label"><span>index.html</span><button class="copy-btn" data-copy="&lt;h1&gt;Hello, Web!&lt;/h1&gt;&#10;&lt;p&gt;This is my first page.&lt;/p&gt;">نسخ الكود ⧉</button></div>
+          <pre><code><span class="code-tag">&lt;h1&gt;</span>Hello, Web!<span class="code-tag">&lt;/h1&gt;</span>
+<span class="code-tag">&lt;p&gt;</span>This is my first page.<span class="code-tag">&lt;/p&gt;</span></code></pre>
+          <div class="result-box"><span class="result-label">BROWSER OUTPUT</span><h4>Hello, Web!</h4><p>This is my first page.</p></div>
+          <div class="tech-footer"><span class="dot html-dot"></span> HTML builds the structure</div>
+        </article>
+        <article class="tech-card glass-card">
+          <div class="tech-head"><span class="tech-icon css-icon">{ }</span><span class="tech-label">STATION 04 · STYLE</span></div>
+          <h3>CSS <span>— التنسيق</span></h3><p>CSS مسؤولة عن مظهر الصفحة: الألوان، الخطوط، المسافات، وترتيب العناصر.</p>
+          <div class="code-label"><span>style.css</span><button class="copy-btn" data-copy="h1 {&#10;  color: #62a5ff;&#10;  letter-spacing: 2px;&#10;}">نسخ الكود ⧉</button></div>
+          <pre><code><span class="code-selector">h1</span> {
+  <span class="code-prop">color</span>: <span class="code-value">#62a5ff</span>;
+  <span class="code-prop">letter-spacing</span>: <span class="code-value">2px</span>;
+}</code></pre>
+          <div class="result-box css-result"><span class="result-label">LIVE STYLE PREVIEW</span><div class="before-after"><div><small>BEFORE</small><h4 class="before-title">Hello, Web!</h4></div><span>→</span><div><small>AFTER</small><h4 class="after-title">Hello, Web!</h4></div></div><button class="demo-btn" id="cssDemo">طبّق التنسيق</button></div>
+          <div class="tech-footer"><span class="dot css-dot"></span> CSS makes it beautiful</div>
+        </article>
+        <article class="tech-card glass-card">
+          <div class="tech-head"><span class="tech-icon js-icon">JS</span><span class="tech-label">STATION 05 · INTERACTION</span></div>
+          <h3>JavaScript <span>— التفاعل</span></h3><p>JavaScript تضيف السلوك للصفحة، مثل الاستجابة للنقر وتغيير النص أو تنفيذ العمليات.</p>
+          <div class="code-label"><span>script.js</span><button class="copy-btn" data-copy="const button = document.querySelector('#changeText');&#10;button.addEventListener('click', () =&gt; {&#10;  document.querySelector('#demoMessage').textContent = 'Hello, JavaScript!';&#10;});">نسخ الكود ⧉</button></div>
+          <pre><code><span class="code-key">const</span> button = document
+  .<span class="code-fn">querySelector</span>(<span class="code-str">'#changeText'</span>);
+
+button.<span class="code-fn">addEventListener</span>(<span class="code-str">'click'</span>, () =&gt; {
+  message.textContent = <span class="code-str">'Hello!'</span>;
+});</code></pre>
+          <div class="result-box js-result"><span class="result-label">TRY IT YOURSELF</span><h4 id="demoMessage">اضغط الزر لتجربة JavaScript</h4><button class="demo-btn" id="changeText">اضغط هنا ↗</button><span class="click-count" id="clickCount">عدد النقرات: 0</span></div>
+          <div class="tech-footer"><span class="dot js-dot"></span> JavaScript brings it to life</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="compare">
+      <div class="section-heading"><div><span class="section-kicker">TWO SIDES OF THE WEB</span><h2>FRONTEND <span>VS</span> BACKEND</h2></div><span class="section-number">04</span></div>
+      <p class="section-description">تخيّل أنك تستخدم متجرًا إلكترونيًا. فيه جزء تشوفه وتتفاعل معه، وجزء يعمل خلف الكواليس.</p>
+      <div class="compare-grid">
+        <div class="compare-card frontend glass-card"><div class="compare-top"><span class="compare-icon">◫</span><span>THE VISIBLE SIDE</span></div><h3>Frontend</h3><h4>الواجهة الأمامية</h4><p>كل شيء يظهر أمام المستخدم ويتفاعل معه داخل الموقع.</p><ul><li>تصميم الصفحة والألوان</li><li>الأزرار والقوائم</li><li>عرض المنتجات وسلة الشراء</li></ul><div class="store-mock"><div class="mock-nav">◈ STORE <span>☰　⌕　♡</span></div><div class="mock-product"><div class="mock-image">✧</div><div><b>Product Name</b><small>واجهة المنتج</small></div><button>أضف للسلة</button></div></div></div>
+        <div class="compare-card backend glass-card"><div class="compare-top"><span class="compare-icon">⌘</span><span>BEHIND THE SCENES</span></div><h3>Backend</h3><h4>الواجهة الخلفية</h4><p>العمليات التي تحدث خلف الواجهة لمعالجة البيانات والطلبات.</p><ul><li>التحقق من تسجيل الدخول</li><li>معالجة طلب الشراء</li><li>التعامل مع قاعدة البيانات</li></ul><div class="server-mock"><div class="server-row"><i></i><i></i><i></i><span>SERVER STATUS</span><b>RUNNING</b></div><div class="server-line"></div><div class="server-line short"></div><div class="server-line mid"></div><small>Request received → Processing → Response sent</small></div></div>
+      </div>
+      <div class="analogy"><span>↗</span><p><b>مثال سريع:</b> لما تضغطين «أضف للسلة»، الزر وشكل السلة من الـ Frontend، أما حفظ الطلب والتحقق منه فيتم في الـ Backend.</p></div>
+    </section>
+
+    <section class="content-section section-wrap" id="ai">
+      <div class="section-heading"><div><span class="section-kicker">BUILD WITH AI</span><h2>HOW AI <span>HELPED ME</span></h2></div><span class="section-number">05</span></div>
+      <div class="ai-card glass-card"><div class="ai-symbol">✳</div><div><span class="tiny-label">AI IS MY ASSISTANT, NOT MY UNDERSTANDING</span><h3>استخدمت الذكاء الاصطناعي كأداة مساعدة.</h3><p>استعنت بـ ChatGPT في اقتراح هيكل الصفحة، وكتابة أجزاء من HTML وCSS وJavaScript، وتحسين تنسيق التصميم. ثم راجعت الأكواد وربطت الأمثلة بنتائجها داخل الصفحة.</p><div class="ai-points"><div><span>01</span><b>الأداة</b><small>ChatGPT</small></div><div><span>02</span><b>كيف ساعدتني؟</b><small>بناء الهيكل وتنسيق الصفحة وشرح الأخطاء.</small></div><div><span>03</span><b>ما الذي فهمته؟</b><small>الفرق بين HTML وCSS وJavaScript وكيف تتكامل.</small></div></div><p class="ai-honesty">✦ أراجع الأكواد وأعدّلها بنفسي حتى أفهم وظيفة كل جزء.</p></div></div>
+    </section>
+
+    <section class="closing section-wrap"><span class="closing-star">✳</span><p class="section-kicker">LEARN IT · CODE IT · MAKE IT YOURS</p><h2>You’ve learned the basics.<br><span>Now build beyond them.</span></h2><p>هذه مجرد البداية — القادم أجمل مع كل تجربة جديدة.</p><a href="#home" class="back-top">العودة إلى الأعلى ↑</a></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>MY WEB <b>PLAYGROUND</b></span></a><span>Designed & built with curiosity by Rahaf · 2026</span><span>HTML · CSS · JS</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
